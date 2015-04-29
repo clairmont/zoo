@@ -1,11 +1,12 @@
 class Giraffe < ActiveRecord::Base
  def guess_age(age)
   a = age
-  if a.between?(16,19)
-  puts "Adult"
-  elsif a > 6
-  puts "Infant"
+  if a.between?(16,99)
+    return "Adult"
+  elsif a.between?(0,6)
+    return "Infant"
   else
-  puts "Maturing Adolescent"
- end
+    return "Maturing Adolescent"
+   end
+  end
 end

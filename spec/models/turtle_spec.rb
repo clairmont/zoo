@@ -1,5 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe Turtle, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+ it "is a turtle" do
+   expect(subject).to be_an_instance_of(Turtle)
+ end
+  
+ it "has a status" do
+   expect(subject).to have_attribute(:inshell)
+ end
+
+ it "can pull head in" do
+
+ end
+  
 end

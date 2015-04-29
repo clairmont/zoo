@@ -5,4 +5,5 @@ class Turtle < ActiveRecord::Base
  end
  def emerge()
  turtle.inshell = false
+ end
 end

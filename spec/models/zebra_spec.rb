@@ -1,5 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe Zebra, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+ it "is a Zebra" do
+   expect(subject).to be_an_instance_of(Zebra)
+ end
+  
+ it "has a status" do
+   expect(subject).to have_attribute(:weight)
+ end
+
+ it "can pull head in" do
+
+ end
+  
 end

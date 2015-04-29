@@ -1,13 +1,13 @@
 class Tiger < ActiveRecord::Base
   def hungry?
-  t = Tiger.sample
-  return true if t.appetite > 0
+   return true if Tiger.appetite > 0
   end
 
   def eat(zebra)
-  weight = zebra.weight
-  appetite = Tiger.appetite
-  appetite_new = appetite - weight
-  Tiger.save
+  z = zebra.weight
+  appetite = t.appetite
+  appetite_new = appetite - z
+  t.save
   zebra.destroy
+  end
 end
