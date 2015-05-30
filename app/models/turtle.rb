@@ -1,9 +1,9 @@
 class Turtle < ActiveRecord::Base
 
  def hide()
- turtle.inshell = true
+   self.inshell = true
  end
  def emerge()
- turtle.inshell = false
+   self.inshell = false
  end
 end

@@ -11,7 +11,8 @@ RSpec.describe Turtle, type: :model do
  end
 
  it "can pull head in" do
-
+  t = Turtle.create(inshell: :false)
+  expect(t.inshell).to eq("false")
  end
   
 end

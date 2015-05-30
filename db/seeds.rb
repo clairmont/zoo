@@ -7,11 +7,18 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Tiger.create appetite:100
+Tiger.create appetite:400
+
 
 Zebra.create weight:200
 Zebra.create weight:100
 Zebra.create weight:1
 
-Turtle.create
+Turtle.create inshell: true
+Turtle.create inshell: false
 
-Giraffe.create
+
+Giraffe.create height: 10
+Giraffe.create height: 20
+Giraffe.create height: 30
+Giraffe.create height: 40
